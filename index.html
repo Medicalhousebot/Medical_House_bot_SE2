@@ -1,0 +1,1768 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>درسنامه بالینی آرتریت‌های عفونی، بروسلوز و سل ستون فقرات - دکتر حسین سلیمانی</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;800&display=swap');
+
+    :root {
+      --primary:    #1a237e;
+      --secondary:  #283593;
+      --accent1:    #0277bd;
+      --accent2:    #00838f;
+      --accent3:    #6a1b9a;
+      --accent4:    #ad1457;
+      --accent5:    #e65100;
+      --bg:         #f0f4ff;
+      --card:       #ffffff;
+      --text:       #1a1a2e;
+      --muted:      #546e7a;
+      --border:     #c5cae9;
+      --green:      #1b5e20;
+      --greenlight: #e8f5e9;
+      --redlight:   #ffebee;
+      --red:        #b71c1c;
+      --yellowlight:#fff8e1;
+      --yellow:     #f57f17;
+      --bluelight:  #e3f2fd;
+      --blue:       #0d47a1;
+      --purplelight:#f3e5f5;
+      --purple:     #4a148c;
+      --teallight:  #e0f7fa;
+      --teal:       #006064;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.9;
+      font-size: 15px;
+    }
+
+    /* ===== COVER ===== */
+    .cover {
+      background: linear-gradient(135deg, #1a237e 0%, #283593 40%, #0277bd 100%);
+      color: white;
+      text-align: center;
+      padding: 60px 30px 50px;
+      position: relative;
+      overflow: hidden;
+    }
+    .cover::before {
+      content: '';
+      position: absolute;
+      top: -80px; left: -80px;
+      width: 300px; height: 300px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+    }
+    .cover::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; right: -60px;
+      width: 250px; height: 250px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+    }
+    .cover .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 50px;
+      padding: 6px 20px;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+    .cover h1 {
+      font-size: 2.3em;
+      font-weight: 800;
+      margin-bottom: 12px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      line-height: 1.4;
+    }
+    .cover h2 {
+      font-size: 1.25em;
+      font-weight: 400;
+      opacity: 0.92;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+    .cover .meta {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .cover .meta-item {
+      background: rgba(255,255,255,0.12);
+      border-radius: 12px;
+      padding: 10px 20px;
+      font-size: 13px;
+    }
+    .cover .meta-item span { display: block; font-weight: 700; font-size: 15px; margin-top: 3px; }
+
+    /* ===== TOC ===== */
+    .toc {
+      background: white;
+      margin: 30px auto;
+      max-width: 960px;
+      border-radius: 16px;
+      padding: 30px 35px;
+      box-shadow: 0 4px 20px rgba(26,35,126,0.08);
+      border-right: 5px solid var(--primary);
+    }
+    .toc h3 {
+      font-size: 1.3em;
+      color: var(--primary);
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .toc ol {
+      padding-right: 25px;
+    }
+    .toc ol li {
+      padding: 6px 0;
+      color: var(--accent1);
+      font-weight: 600;
+      font-size: 14.5px;
+    }
+    .toc ol li a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .toc ol li a:hover { color: var(--secondary); text-decoration: underline; }
+
+    /* ===== MAIN WRAPPER ===== */
+    .main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+    }
+
+    /* ===== SECTION HEADER ===== */
+    .section-header {
+      border-radius: 14px;
+      padding: 18px 25px;
+      margin: 40px 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white;
+      font-size: 1.25em;
+      font-weight: 700;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    }
+    .section-header .icon {
+      font-size: 1.5em;
+      background: rgba(255,255,255,0.2);
+      border-radius: 50%;
+      width: 44px; height: 44px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .sh-blue   { background: linear-gradient(135deg, #1565c0, #0288d1); }
+    .sh-purple { background: linear-gradient(135deg, #6a1b9a, #ab47bc); }
+    .sh-teal   { background: linear-gradient(135deg, #00695c, #26a69a); }
+    .sh-red    { background: linear-gradient(135deg, #b71c1c, #ef5350); }
+    .sh-orange { background: linear-gradient(135deg, #e65100, #ff7043); }
+    .sh-green  { background: linear-gradient(135deg, #1b5e20, #43a047); }
+    .sh-indigo { background: linear-gradient(135deg, #283593, #5c6bc0); }
+
+    /* ===== SUBSECTION ===== */
+    .subsection {
+      background: white;
+      border-radius: 12px;
+      padding: 24px 25px;
+      margin-bottom: 22px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border-top: 4px solid transparent;
+    }
+    .sub-blue   { border-top-color: #1565c0; }
+    .sub-purple { border-top-color: #6a1b9a; }
+    .sub-teal   { border-top-color: #00695c; }
+    .sub-red    { border-top-color: #b71c1c; }
+    .sub-orange { border-top-color: #e65100; }
+    .sub-green  { border-top-color: #1b5e20; }
+    .sub-indigo { border-top-color: #283593; }
+
+    .subsection h4 {
+      font-size: 1.1em;
+      font-weight: 700;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px dashed var(--border);
+      color: var(--secondary);
+    }
+
+    /* ===== INFO BOX ===== */
+    .infobox {
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 14px 0;
+      display: flex;
+      gap: 12px;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    .infobox .ib-icon { font-size: 1.3em; flex-shrink: 0; margin-top: 2px; }
+    .ib-blue   { background: var(--bluelight);   border-right: 4px solid #1565c0; color: #0d1b5e; }
+    .ib-green  { background: var(--greenlight);  border-right: 4px solid #2e7d32; color: #1b3a1f; }
+    .ib-red    { background: var(--redlight);    border-right: 4px solid #c62828; color: #5c0000; }
+    .ib-yellow { background: var(--yellowlight); border-right: 4px solid #f9a825; color: #4a2c00; }
+    .ib-purple { background: var(--purplelight); border-right: 4px solid #6a1b9a; color: #2d0048; }
+    .ib-teal   { background: var(--teallight);   border-right: 4px solid #006064; color: #003033; }
+
+    /* ===== LIST STYLES (SAFARI & MOBILE SAFE) ===== */
+    .list-styled {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+    .list-styled li {
+      padding: 6px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 14px;
+      border-bottom: 1px dotted #e8eaf6;
+    }
+    .list-styled li:last-child { border-bottom: none; }
+    .list-styled li::before {
+      content: '◈';
+      color: var(--accent1);
+      flex-shrink: 0;
+      margin-top: 2px;
+      font-size: 12px;
+    }
+    .list-styled.green li::before  { color: #2e7d32; }
+    .list-styled.red li::before    { color: #c62828; }
+    .list-styled.purple li::before { color: #6a1b9a; }
+    .list-styled.teal li::before   { color: #006064; }
+    .list-styled.orange li::before { color: #e65100; }
+
+    .li-content {
+      flex: 1;
+      display: inline;
+      line-height: 1.8;
+      color: var(--text);
+    }
+
+    /* ===== TAGS / PILLS ===== */
+    .tag {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      margin: 2px 3px;
+    }
+    .tag-blue   { background: #e3f2fd; color: #0d47a1; }
+    .tag-red    { background: #ffebee; color: #b71c1c; }
+    .tag-green  { background: #e8f5e9; color: #1b5e20; }
+    .tag-purple { background: #f3e5f5; color: #4a148c; }
+    .tag-orange { background: #fff3e0; color: #e65100; }
+    .tag-teal   { background: #e0f7fa; color: #006064; }
+    .tag-yellow { background: #fff8e1; color: #f57f17; }
+
+    /* ===== TABLE ===== */
+    .table-wrap { overflow-x: auto; margin: 18px 0; border-radius: 10px; box-shadow: 0 1px 6px rgba(0,0,0,0.05); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+      background: white;
+    }
+    table thead tr {
+      background: var(--primary);
+      color: white;
+    }
+    table thead th {
+      padding: 12px 14px;
+      text-align: right;
+      font-weight: 700;
+    }
+    table tbody tr:nth-child(even) { background: #f8faff; }
+    table tbody tr:hover { background: #e8eaf6; }
+    table tbody td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e4f8;
+      vertical-align: top;
+      line-height: 1.7;
+    }
+    table tbody tr:last-child td { border-bottom: none; }
+
+    /* ===== GRID 2-COL ===== */
+    .grid2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 14px 0;
+    }
+    @media(max-width:640px){ .grid2 { grid-template-columns: 1fr; } }
+
+    /* ===== MINI CARD ===== */
+    .mini-card {
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 13.5px;
+      line-height: 1.8;
+    }
+    .mc-blue   { background: #e8eaf6; border-right: 4px solid #3949ab; }
+    .mc-green  { background: #e8f5e9; border-right: 4px solid #388e3c; }
+    .mc-red    { background: #ffebee; border-right: 4px solid #e53935; }
+    .mc-purple { background: #f3e5f5; border-right: 4px solid #8e24aa; }
+    .mc-orange { background: #fff3e0; border-right: 4px solid #f4511e; }
+    .mc-teal   { background: #e0f7fa; border-right: 4px solid #00838f; }
+    .mini-card h5 { font-weight: 700; margin-bottom: 8px; font-size: 14px; }
+
+    /* ===== KEY-VALUE ROW ===== */
+    .kv-row {
+      padding: 8px 0;
+      font-size: 14px;
+      border-bottom: 1px dotted #e0e4f8;
+      line-height: 1.8;
+    }
+    .kv-row:last-child { border-bottom: none; }
+    .kv-key {
+      font-weight: 700;
+      color: var(--secondary);
+      display: inline;
+      margin-left: 6px;
+    }
+    .kv-value {
+      color: var(--text);
+      display: inline;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--primary);
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 13.5px;
+      margin-top: 60px;
+      line-height: 1.8;
+    }
+
+    /* ===== INTERACTIVE MINIATURE NOTE MARKER ===== */
+    .note-marker {
+      background-color: #ffd54f !important;
+      border: 1px solid #ffb300 !important;
+      color: #000 !important;
+      border-radius: 4px !important;
+      cursor: pointer !important;
+      padding: 1px 4px !important;
+      margin: 0 3px !important;
+      font-size: 11px !important;
+      user-select: none !important;
+      display: inline-block !important;
+      vertical-align: middle !important;
+      font-weight: bold !important;
+      position: relative;
+      animation: notePulse 2s infinite;
+    }
+    @keyframes notePulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+      100% { transform: scale(1); }
+    }
+
+    .note-tooltip {
+      display: none;
+      position: absolute;
+      bottom: 125%;
+      right: 0;
+      background: #37474f;
+      color: #ffffff;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 12px;
+      min-width: 180px;
+      max-width: 250px;
+      z-index: 1000;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+      white-space: normal;
+      line-height: 1.5;
+      font-weight: normal;
+      text-align: right;
+    }
+    .note-marker:hover .note-tooltip, .note-marker:active .note-tooltip {
+      display: block !important;
+    }
+
+    /* ===== MODAL DIALOGS ===== */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(26, 35, 126, 0.5);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+      direction: rtl;
+    }
+    .modal-card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      border-top: 5px solid var(--primary);
+    }
+    .modal-card h4 {
+      margin-bottom: 14px;
+      color: var(--primary);
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .modal-textarea {
+      width: 100%;
+      height: 120px;
+      padding: 10px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-family: inherit;
+      resize: none;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    .modal-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+    .btn {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      font-size: 13px;
+    }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-danger { background: var(--red); color: white; }
+    .btn-secondary { background: #eceff1; color: #37474f; }
+
+    /* ===== BOTTOM TOOLBAR ===== */
+    #highlight-panel {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+      border-radius: 50px;
+      padding: 10px 20px;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 2px solid var(--primary);
+      direction: rtl;
+      width: max-content;
+      max-width: 95%;
+    }
+    #highlight-panel span {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .hl-btn {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: 1px solid rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: transform 0.1s;
+    }
+    .hl-btn:hover { transform: scale(1.15); }
+    .hl-btn-yellow { background-color: #fff59d; }
+    .hl-btn-green  { background-color: #c8e6c9; }
+    .hl-btn-blue   { background-color: #bbdefb; }
+    .hl-btn-pink   { background-color: #f8bbd0; }
+    .panel-action-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .panel-action-btn-red { background: var(--red); }
+  </style>
+</head>
+<body>
+
+<!-- ===================== COVER ===================== -->
+<div class="cover">
+  <div class="badge">روماتولوژی و عفونت‌های مفصلی-استخوانی • دوره بالینی پزشکی</div>
+  <h1>آرتریت‌های عفونی، بروسلوز و سل ستون فقرات (Pott's Disease)</h1>
+  <h2>درسنامه جامع بالینی: بازآرایی و انطباق دقیق گام‌به‌گام با ترتیب تدریس و صدای استاد</h2>
+  <div class="meta">
+    <div class="meta-item">مدرس: <span>دکتر حسین سلیمانی (استادیار روماتولوژی)</span></div>
+    <div class="meta-item">تنظیم و انطباق تعاملی: <span>احمدرضا عبداللهی پور</span></div>
+    <div class="meta-item">دریافت فایل‌های بیشتر: 
+      <a href="https://t.me/Medical_house_bot" target="_blank" style="display: inline-block; padding: 4px 10px; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; background: rgba(255,255,255,0.2);">
+        🤖 بات تلگرامی خانه پزشکی
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== TOC ===================== -->
+<div class="toc">
+  <h3>📋 فهرست مطالب درسنامه (دقیقاً منطبق بر سیر تدریس وویس)</h3>
+  <ol>
+    <li><a href="#sec-1">بخش ۱: تعریف، اهمیت اورژانسی، طیف عوامل بیماری‌زا و بیماری‌های زمینه‌ساز (Risk Factors)</a></li>
+    <li><a href="#sec-2">بخش ۲: شاخص‌های اپیدمیولوژی، دموگرافی، توزیع سنی و شایع‌ترین مفاصل درگیر</a></li>
+    <li><a href="#sec-3">بخش ۳: باکتریولوژی تفصیلی بر اساس سن، شرایط زمینه‌ای و مواجهه‌های اختصاصی</a></li>
+    <li><a href="#sec-4">بخش ۴: راه‌های پنج‌گانه ورود میکروب به مفصل (Routes of Infection) و مرور زمینه‌ها</a></li>
+    <li><a href="#sec-5">بخش ۵: پاتوفیزیولوژی سلولی و مکانیسم‌های مولکولی تخریب غضروف مفصلی</a></li>
+    <li><a href="#sec-6">بخش ۶: تظاهرات بالینی کلاسیک در بزرگسالان، نوزادان/کودکان و پرزنتیشن آتیپیک</a></li>
+    <li><a href="#sec-7">بخش ۷: ارزیابی تشخیصی، تصویربرداری و آنالیز جامع مایع مفصلی (Synovial Fluid)</a></li>
+    <li><a href="#sec-8">بخش ۸: تشخیص‌های افتراقی بالینی بسیار مهم آرتریت سپتیک</a></li>
+    <li><a href="#sec-9">بخش ۹: پروتکل‌های جامع درمان آنتی‌بیوتیکی تجربی و اختصاصی و تخلیه مفصل</a></li>
+    <li><a href="#sec-10">بخش ۱۰: بروسلوز (تب مالت): اپیدمیولوژی، باکتریولوژی، مخازن، اریتریتول و پاتوژنز</a></li>
+    <li><a href="#sec-11">بخش ۱۱: تظاهرات اسکلتی-عضلانی بروسلوز (ساکروایلییت، آرتریت محیطی، اسپوندیلیت)، سرولوژی و درمان</a></li>
+    <li><a href="#sec-12">بخش ۱۲: درسنامه مکمل - سل ستون مهره‌ها (بیماری پات - TB Spondylodiscitis)</a></li>
+  </ol>
+</div>
+
+<!-- ===================== MAIN CONTENT ===================== -->
+<div class="main">
+
+  <!-- SECTION 1 -->
+  <div class="section-header sh-blue" id="sec-1">
+    <div class="icon">🚨</div>
+    <span>بخش ۱: تعریف، اهمیت اورژانسی، طیف عوامل بیماری‌زا و بیماری‌های زمینه‌ساز (Risk Factors)</span>
+  </div>
+
+  <div class="subsection sub-blue">
+    <h4>مفهوم بالینی آرتریت سپتیک و هشدار عدم تأخیر در تشخیص</h4>
+    <div class="infobox ib-red">
+      <span class="ib-icon">⚠️</span>
+      <div>
+        <strong>نکته آغازین تدریس استاد:</strong> آرتریت عفونی (Septic Arthritis) یک التهاب حاد و دردناک در فضای داخل مفصلی است و <strong>یک اورژانس قطعی پزشکی</strong> به شمار می‌رود. هر مفصلی که دچار التهاب حاد شود باید به سرعت مورد ارزیابی قرار گیرد؛ نبایستی در تشخیص و درمان تأخیری رخ دهد زیرا منجر به <strong>تخریب سریع و غیرقابل‌برگشت غضروف مفصلی</strong>، ناتوانی دائم یا شوک سپسیس خواهد شد.
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="mini-card mc-blue">
+        <h5>طیف علل ایجادکننده آرتریت سپسیس (کلام استاد)</h5>
+        <ul class="list-styled">
+          <li><span class="li-content"><strong>عوامل باکتریال پیوژن:</strong> شایع‌ترین علل کلی؛ در رأس آنها استافیلوکوک طلایی، استرپتوکوک پیوژنز و هموفیلوس آنفولانزا.</span></li>
+          <li><span class="li-content"><strong>آرتریت گونوکوکی (Gonococcal):</strong> در افراد جوانی که دچار اورتریت گونوکوکی شده و به دنبال آن دچار آرتریت واکنشی یا سپتیک می‌شوند.</span></li>
+          <li><span class="li-content"><strong>عوامل باکتریال فرصت‌طلب:</strong> نظیر مایکوباکتریوم توبرکلوزیس (TB) و مایکوباکتری‌های آتیپیک.</span></li>
+          <li><span class="li-content"><strong>عفونت‌های ویروسی (Viral):</strong> هپاتیت B، هپاتیت C، پاروویروس B19 و ویروس HIV.</span></li>
+          <li><span class="li-content"><strong>عفونت‌های فرصت‌طلب دیگر:</strong> قارچ‌ها و انگل‌ها به ویژه در بیماران دارای نقص ایمنی شدید.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-red">
+        <h5>پاتوژن‌های بسیار شایع در نمای کلی</h5>
+        <div class="kv-row">
+          <div class="kv-key">شایع‌ترین علت مطلق:</div>
+          <div class="kv-value"><strong>استاف طلایی یا استافیلوکوک اورئوس (S. aureus)</strong></div>
+        </div>
+        <div class="kv-row">
+          <div class="kv-key">پاتوژن‌های بعدی:</div>
+          <div class="kv-value">استرپتوکوک پیوژنز (Group A) و هموفیلوس آنفولانزا</div>
+        </div>
+        <div class="kv-row">
+          <div class="kv-key">پیامد تأخیر درمانی:</div>
+          <div class="kv-value">لیز غضروفی غیرقابل جبران در کمتر از ۲۴ تا ۴۸ ساعت</div>
+        </div>
+      </div>
+    </div>
+
+    <h4 style="margin-top: 20px;">بیماری‌های زمینه‌ساز و عوامل خطرساز مستعدکننده (Predisposing Factors)</h4>
+    <p style="margin-bottom: 12px;">
+      همان‌گونه که استاد تأکید دارند، اکثر قریب به اتفاق بیمارانی که به آرتریت سپسیس مبتلا می‌شوند یک بیماری زمینه‌ساز دارند:
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>عامل زمینه‌ساز یا شرایط بالینی</th>
+            <th>مکانیسم یا ارگانیسم شایع مرتبط</th>
+            <th>نکات آموزشی تدریس استاد سلیمانی</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>آرتریت روماتوئید (Rheumatoid Arthritis)</strong></td>
+            <td>تخریب قبلی غضروف، آسیب میکرواسکولار، مهار دفاع موضعی</td>
+            <td><strong>شایع‌ترین و مهم‌ترین بیماری زمینه‌ساز فردی</strong>؛ در مواجهه با تورم تک‌مفصلی حاد در بیمار RA باید حتماً به فکر سپسیس بود.</td>
+          </tr>
+          <tr>
+            <td><strong>دیابت قندی (Diabetes Mellitus)</strong></td>
+            <td>اختلال عملکرد نوتروفیل‌ها و آسیب عروقی محیطی</td>
+            <td>مستعدکننده به عفونت‌های باسیل گرم منفی و استاف اورئوس.</td>
+          </tr>
+          <tr>
+            <td><strong>نارسایی مزمن کلیه (CKD)</strong></td>
+            <td>اورمی، اختلال ایمنی هومورال و سلولی</td>
+            <td>تضعیف پاکسازی باکتریمی و افزایش ریسک سپسیس مفصلی.</td>
+          </tr>
+          <tr>
+            <td><strong>زخم‌های واسکولیتی و بیماری‌های پوستی</strong></td>
+            <td>تخریب سد دفاعی پوست، سلولیت مجاور</td>
+            <td>ورود مستقیم استافیلوکوک و استرپتوکوک از زخم به گردش خون و لنف.</td>
+          </tr>
+          <tr>
+            <td><strong>درمان با گلوکوکورتیکوئیدها و بدخیمی‌ها</strong></td>
+            <td>سرکوب ایمنی سلولی و کموتراپی</td>
+            <td>پرزنتیشن بدون تب و بدون علائم تیپیک التهابی حاد.</td>
+          </tr>
+          <tr>
+            <td><strong>داروهای مهارکننده TNF (Infliximab, Etanercept)</strong></td>
+            <td>مهار TNF-α و تضعیف شدید ایمنی درون‌سلولی و پیوژن</td>
+            <td>استعداد بسیار بالا به مایکوباکتریوم توبرکلوزیس، مایکوباکتری‌های آتیپیک و عفونت‌های چرکی شدید.</td>
+          </tr>
+          <tr>
+            <td><strong>الکلیسم، سیروز کبدی و کمبود ایمنی هومورال</strong></td>
+            <td>اختلال اپسونیزاسیون، هایپوگاماگلوبولینمی</td>
+            <td>استعداد بالا به باکتری‌های کپسول‌دار نظیر <strong>پنوموکوک (S. pneumoniae)</strong>.</td>
+          </tr>
+          <tr>
+            <td><strong>اختلالات هموگلوبین (Sickle Cell Anemia) و SLE</strong></td>
+            <td>اختلال عملکرد طحال و آسیب میکروسکولار</td>
+            <td>استعداد ویژه و بارز به آرتریت سپتیک با <strong>سالمونلا (Salmonella)</strong> و پنوموکوک.</td>
+          </tr>
+          <tr>
+            <td><strong>عفونت HIV و ایدز (AIDS)</strong></td>
+            <td>افت تدریجی ایمنی سلولی و به دنبال آن ایمنی هومورال</td>
+            <td>استعداد به پنوموکوک، سالمونلا و هموفیلوس آنفولانزا.</td>
+          </tr>
+          <tr>
+            <td><strong>سوءمصرف وریدی مواد مخدر (IVDU)</strong></td>
+            <td>تزریقات غیربهداشتی و کلونیزاسیون باکتریایی عروق</td>
+            <td>علاوه بر استاف و استرپتوکوک، <strong>سودوموناس آئروژینوزا</strong> عامل شاخص است؛ تمایل زیاد به <strong>مفاصل آتیپیک (ساکروایلییک، سمفیز پوبیس، شانه و استرنوکلاویکولار)</strong>.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SECTION 2 -->
+  <div class="section-header sh-indigo" id="sec-2">
+    <div class="icon">📊</div>
+    <span>بخش ۲: شاخص‌های اپیدمیولوژی، دموگرافی، توزیع سنی و شایع‌ترین مفاصل درگیر</span>
+  </div>
+
+  <div class="subsection sub-indigo">
+    <h4>پره‌والانس، گروه‌های سنی آسیب‌پذیر و نسبت جنسی</h4>
+    <p style="margin-bottom: 12px;">
+      آرتریت سپتیک به طور کلی بیماری خیلی شایعی نیست و میزان شیوع کلی آن در بیمارانی که با یک مفصل حاداً ملتهب مراجعه می‌کنند بین <strong>۸ تا ۲۷ درصد</strong> تخمین زده می‌شود. در جمعیت عمومی میزان بروز سالانه حدود <strong>۶ مورد به ازای هر ۱۰۰ هزار نفر</strong> در زیر ۱۵ سال یا بالای ۵۵ سال است.
+    </p>
+
+    <div class="grid2">
+      <div class="mini-card mc-purple">
+        <h5>الگوی توزیع سنی و جنسی (کلام استاد)</h5>
+        <ul class="list-styled purple">
+          <li><span class="li-content"><strong>الگوی دوپیک سنی (Bimodal Peak):</strong> آرتریت سپسیس در دو گروه سنی شیوع بالاتری دارد: ۱. در نوزادان و بچه‌های کوچک ۲. در افراد مسن و سالمندان.</span></li>
+          <li><span class="li-content"><strong>علت درگیری دوپیک:</strong> ضعف نسبی یا افت کارایی سیستم ایمنی در هر دو سر طیف سنی.</span></li>
+          <li><span class="li-content"><strong>سن بیماران پدیاتریک:</strong> اکثر کودکان مبتلا به آرتریت سپسیس دارای سن <strong>کمتر از ۳ سال</strong> می‌باشند.</span></li>
+          <li><span class="li-content"><strong>نسبت ابتلا بر اساس جنسیت:</strong> نسبت ابتلای زن و مرد تقریباً برابر و یکسان است (<strong>M = F</strong>).</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-blue">
+        <h5>مفاصل درگیر به ترتیب شیوع</h5>
+        <div class="kv-row"><div class="kv-key">شایع‌ترین مفصل در کل:</div><div class="kv-value"><strong>مفصل زانو (Knee)</strong> (حدود نیمی از کل موارد)</div></div>
+        <div class="kv-row"><div class="kv-key">دومین مفصل شایع:</div><div class="kv-value">مفصل هیپ / ران (Hip - به ویژه در نوزادان)</div></div>
+        <div class="kv-row"><div class="kv-key">سایر مفاصل محیطی:</div><div class="kv-value">شانه (Shoulder)، آرنج (Elbow)، مچ دست و مچ پا</div></div>
+        <div class="kv-row"><div class="kv-key">مفاصل غیراختصاصی و آگزیال:</div><div class="kv-value">استرنوکلاویکولار، ساکروایلییک و سمفیز پوبیس (معتادان وریدی)</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3 -->
+  <div class="section-header sh-purple" id="sec-3">
+    <div class="icon">🔬</div>
+    <span>بخش ۳: باکتریولوژی تفصیلی بر اساس سن، شرایط زمینه‌ای و مواجهه‌های اختصاصی</span>
+  </div>
+
+  <div class="subsection sub-purple">
+    <h4>بررسی اسلاید باکتریولوژی آرتریت سپسیس و پاتوژن‌ها</h4>
+    <p style="margin-bottom: 12px;">
+      همان‌طور که در تصویر اسلاید کلاس استاد نشان داده شده است، خوشه‌های کوکسی‌های گرم‌مثبت استافیلوکوک اورئوس پاتوژن شماره یک محسوب می‌شوند:
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>نام میکروارگانیسم</th>
+            <th>درصد تقریبی موارد</th>
+            <th>جایگاه بالینی و ویژگی میکروسکوپی</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>استافیلوکوک اورئوس (S. aureus)</strong></td>
+            <td><strong>۵۵ تا ۷۵ ٪</strong></td>
+            <td>بیش از دو سوم تا سه چهارم کل موارد؛ کوکسی گرم‌مثبت خوشه‌ای، کاتالاز و کوآگولاز مثبت؛ تخریب‌کننده شدید غضروف.</td>
+          </tr>
+          <tr>
+            <td><strong>بتا استرپتوکوک‌ها (Beta-streptococcus)</strong></td>
+            <td><strong>حدود ۲۲ ٪</strong></td>
+            <td>کوکسی‌های گرم‌مثبت زنجیره‌ای؛ گروه‌های A، B، C و G.</td>
+          </tr>
+          <tr>
+            <td><strong>اشریشیا کولای (E. coli)</strong></td>
+            <td><strong>حدود ۴ ٪</strong></td>
+            <td>باسیل گرم‌منفی روده‌ای؛ در دیابت، سالمندی و بعد از دستکاری ادراری.</td>
+          </tr>
+          <tr>
+            <td><strong>استرپتوکوک پنومونیه (S. pneumoniae)</strong></td>
+            <td><strong>حدود ۴ ٪</strong></td>
+            <td>دیپلوکوک گرم‌مثبت کپسول‌دار؛ الکلیسم، نقص هومورال و اسپلنکتومی.</td>
+          </tr>
+          <tr>
+            <td><strong>انتروکوکوس (Enterococcus)</strong></td>
+            <td><strong>حدود ۲ ٪</strong></td>
+            <td>کوکسی گرم‌مثبت زنجیره‌ای روده‌ای، پس از جراحی یا دستکاری ادراری.</td>
+          </tr>
+          <tr>
+            <td><strong>لیستریا، سودوموناس، نایسریا گونوره</strong></td>
+            <td><strong>هر کدام حدود ۲ ٪</strong></td>
+            <td>لیستریا در نقص ایمنی، سودوموناس در معتادان وریدی، گونوکوک در جوانان.</td>
+          </tr>
+          <tr>
+            <td><strong>آلفا استرپتوکوک، سراشیا، باسیلوس سوبتیلیس</strong></td>
+            <td><strong>هر کدام کمتر از ۲ ٪</strong></td>
+            <td>عفونت‌های بیمارستانی، تروماتیک یا باکتریمی‌های خاص.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>انتخاب پاتوژن محتمل بر اساس سن، شرح حال و مواجهه‌های اختصاصی بیمار</h4>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>سن بیمار / سناریوی بالینی مواجهه</th>
+            <th>ارگانیسم‌های بیماری‌زای شایع</th>
+            <th>توضیحات و هشدارهای تشخیصی استاد سلیمانی</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>نوزادان (Neonates)</strong></td>
+            <td>استرپتوکوک گروه B (GBS)، باسیل‌های گرم‌منفی روده‌ای، استافیلوکوک اورئوس و انتروکوک</td>
+            <td>به دلیل صفحات رشد باز، استئومیلیت به آسانی وارد مفصل شده و آسیب سریع ایجاد می‌کند.</td>
+          </tr>
+          <tr>
+            <td><strong>کودکان زیر ۵ سال</strong></td>
+            <td>استافیلوکوک اورئوس، استرپتوکوک پیوژنز، هموفیلوس آنفولانزا، سالمونلا و <em>Kingella kingae</em></td>
+            <td>هموفیلوس با واکسیناسیون کاهش یافته ولی در صورت عدم واکسیناسیون باید در نظر باشد.</td>
+          </tr>
+          <tr>
+            <td><strong>بالغین جوان و فعال جنسی</strong></td>
+            <td>نایسریا گونوره (Neisseria gonorrhoeae) و استافیلوکوک اورئوس</td>
+            <td>بیمار با پارتنرهای متعدد ابتدا دچار اورتریت شده، سپس دچار تابلوی واکنشی/پلی‌آرتیکولار مهاجر یا آرتریت تک‌مفصلی سپتیک می‌شود.</td>
+          </tr>
+          <tr>
+            <td><strong>سالمندان و بیماران زمینه‌ای مزمن</strong></td>
+            <td>باسیل‌های گرم‌منفی روده‌ای، پنوموکوک و استرپتوکوک گروه A و B</td>
+            <td>در بیماران دیابتی، سیروزی یا دارای نارسایی مزمن کلیه، باسیل‌های گرم‌منفی نقش مهمی دارند.</td>
+          </tr>
+          <tr>
+            <td><strong>مفاصل مصنوعی و پروتزها (Prosthetic)</strong></td>
+            <td>استافیلوکوک‌های کوآگولاز منفی (مانند استاف اپیدرمیدیس) و استاف اورئوس</td>
+            <td>فلور طبیعی پوست که حین عمل به علت نقص استریلیزاسیون وارد شده و با تشکیل بیوفیلم پایدار می‌شود.</td>
+          </tr>
+          <tr>
+            <td><strong>گازگرفتگی با حیوانات (به خصوص گربه)</strong></td>
+            <td><em>Pasteurella multocida</em> و <em>Bartonella henselae</em></td>
+            <td>بروز عفونت بسیار سریع و حاد در کمتر از ۲۴ ساعت پس از گزش یا خراش گربه.</td>
+          </tr>
+          <tr>
+            <td><strong>گازگرفتگی انسانی (Human Bite)</strong></td>
+            <td><em>Eikenella corrodens</em> و بی‌هوازی‌های دهان</td>
+            <td>برخورد مشت به دندان حین دعوا یا زخم باز ناشی از دندان انسان.</td>
+          </tr>
+          <tr>
+            <td><strong>ترومای نافذ از کف پا (راه رفتن پا برهنه)</strong></td>
+            <td><strong>سودوموناس آئروژینوزا (Pseudomonas aeruginosa)</strong></td>
+            <td>قدم زدن با پای برهنه در سواحل یا نفوذ میخ و شیشه از کف کفش کتانی ورزشی.</td>
+          </tr>
+          <tr>
+            <td><strong>هموگلوبینوپاتی‌ها (Sickle Cell) و SLE</strong></td>
+            <td><strong>سالمونلا (Salmonella)</strong> و استاف اورئوس</td>
+            <td>ایسکمی عروقی و نقص عملکرد طحال فرد را شدیداً مستعد سالمونلا می‌کند.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SECTION 4 -->
+  <div class="section-header sh-teal" id="sec-4">
+    <div class="icon">🛣️</div>
+    <span>بخش ۴: راه‌های پنج‌گانه ورود میکروب به مفصل (Routes of Infection) و مرور زمینه‌ها</span>
+  </div>
+
+  <div class="subsection sub-teal">
+    <h4>بررسی راه‌های پنج‌گانه ورود میکروب طبق تصویر اسلاید استاد</h4>
+    <ul class="list-styled teal">
+      <li><span class="li-content"><strong>۱. راه انتشار خونی و هماتوژن (Hematogenous Spread - شماره ۱ اسلاید):</strong> شایع‌ترین راه رسیدن میکروب به مفصل در تمامی سنین؛ میکروب از یک کانون عفونی یا باکتریمی گذرا از طریق جریان خون به مویرگ‌های سینوویوم می‌رسد.</span></li>
+      <li><span class="li-content"><strong>۲. گسترش از استخوان مجاور (مجاورت با استئومیلیت - شماره ۲ اسلاید):</strong> میکروب در استخوان مجاور قرار گرفته و عفونت استئومیلیت به فضای مفصلی می‌رسد. این راه به ویژه در <strong>نوزادان و کودکان که صفحات رشد (فیز) آنها باز است</strong> و عروق خونی ترانس‌فیزئال دارند به فراوانی رخ می‌دهد؛ در بزرگسالان کمتر است.</span></li>
+      <li><span class="li-content"><strong>۳. گسترش از پوست، بافت نرم و لنفاتیک مجاور (شماره ۳ اسلاید):</strong> نفوذ میکروب از یک آبسه پوستی مجاور، سلولیت، زخم‌های عمیق، اگزمای شدید یا زخم‌های واسکولیتی از طریق عروق لنفاوی به داخل مفصل.</span></li>
+      <li><span class="li-content"><strong>۴. دستکاری‌های پزشکی و ایاتروژنیک (شماره ۴ اسلاید):</strong> اقداماتی که خود پزشکان روی مفصل انجام می‌دهند؛ مانند تزریق داخل مفصلی (به ویژه کورتون)، عمل آرتروسکوپی یا جراحی‌های مفصلی بدون رعایت کامل شرایط استریل.</span></li>
+      <li><span class="li-content"><strong>۵. ترومای نافذ و شکستگی‌های آلوده (شماره ۵ اسلاید):</strong> نفوذ مستقیم اجسام تیز و برنده به داخل مفصل، تصادفات شدید همراه با شکستگی باز و آلودگی مستقیم بافت.</span></li>
+    </ul>
+
+    <div class="infobox ib-yellow">
+      <span class="ib-icon">💡</span>
+      <div>
+        <strong>مرور مجدد اسلاید فاکتورهای خطر توسط استاد:</strong> در ۸۴٪ بیماران مبتلا به آرتریت سپتیک، حداقل یک یا چند عامل زمینه‌ساز وجود دارد. <strong>آرتریت روماتوئید با اختلاف در رتبه اول است</strong>، پس از آن پروتز مفصلی، دستکاری و تزریق مفصلی، سن بالای ۸۰ سال، دیابت کنترل‌نشده، الکلیسم، فقر اقتصادی، کاتترهای وریدی طولانی‌مدت و بیماری‌های مزمن کبدی و کلیوی قرار دارند.
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 5 -->
+  <div class="section-header sh-orange" id="sec-5">
+    <div class="icon">⚙️</div>
+    <span>بخش ۵: پاتوفیزیولوژی سلولی و مکانیسم‌های مولکولی تخریب غضروف مفصلی</span>
+  </div>
+
+  <div class="subsection sub-orange">
+    <h4>چرا غضروف مفصلی سریعاً تخریب می‌شود؟ (آناتومی سینوویوم و غضروف)</h4>
+    <p style="margin-bottom: 12px;">
+      همان‌طور که استاد سلیمانی تشریح می‌کنند، درک فیزیوپاتولوژی کلید درک فوریت این بیماری است:
+    </p>
+
+    <div class="grid2">
+      <div class="mini-card mc-blue">
+        <h5>ویژگی‌های بافت سینوویال و نفوذ باکتری</h5>
+        <ul class="list-styled">
+          <li><span class="li-content"><strong>عروق فراوان بدون غشای پایه:</strong> بافت سینوویال مفصل فوق‌العاده پرعروق است و نکته بسیار مهم این است که <strong>فاقد غشای پایه (Basement membrane)</strong> پیوسته می‌باشد.</span></li>
+          <li><span class="li-content"><strong>ورود آسان باکتری:</strong> به دلیل فقدان غشای پایه، باکتری‌ها در جریان باکتریمی به راحتی از مویرگ‌ها عبور کرده و وارد مایع مفصلی می‌شوند.</span></li>
+          <li><span class="li-content"><strong>اینفیلتراسیون حاد نوتروفیلی:</strong> به محض ورود باکتری، در عرض چند ساعت هجوم گسترده نوتروفیل‌ها (PMNs) به فضای مفصلی آغاز شده و چرک تشکیل می‌شود.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-red">
+        <h5>آسیب‌پذیری شدید غضروف مفصلی</h5>
+        <ul class="list-styled red">
+          <li><span class="li-content"><strong>غضروف بدون رگ (Avascular):</strong> غضروف رگ خونی مستقیم ندارد؛ بنابراین گلبول‌های سفید (WBC)، ماکروفاژها و ایمنی سلولی ذاتی در غضروف مفصلی حضور ندارند و دفاع محلی بسیار ضعیف است.</span></li>
+          <li><span class="li-content"><strong>کندروسیت (تنها سلول غضروف):</strong> تغذیه و اکسیژن‌رسانی کندروسیت تنها از طریق انتشار ساده (Diffusion) از مایع مفصلی انجام می‌گیرد.</span></li>
+          <li><span class="li-content"><strong>اختلال خونرسانی با افزایش مایع:</strong> با تجمع چرک و افزایش شدید فشار داخل مفصل، انتشار اکسیژن به کندروسیت مختل شده و ترومبوز عروق سینوویال ایسکمی حاد ایجاد می‌کند.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h4>عوامل ویرولانس استافیلوکوک و فعال‌شدن آبشار خودتخریبی غضروف</h4>
+    <ul class="list-styled orange">
+      <li><span class="li-content"><strong>پروتئین‌های چسبندگی سطحی استاف اورئوس:</strong> پروتئین A، پروتئین متصل‌شونده به کلاژن (Collagen-binding protein) و پروتئین متصل‌شونده به فیبرونکتین؛ باکتری به کمک این پروتئین‌ها به شدت به سطح غضروف می‌چسبد.</span></li>
+      <li><span class="li-content"><strong>توکسین‌ها و آنزیم‌های باکتریایی:</strong> ترشح کوآگولاز، آلفا-توکسین، انتروتوکسین B و توکسین شوک توکسیک (TSST-1) که علائم عمومی شوک، تب بالا، تاکیکاردی و افت فشار ایجاد می‌کنند.</span></li>
+      <li><span class="li-content"><strong>فعال شدن آنزیم‌های کندروسیت:</strong> توکسین‌ها کندروسیت‌ها را تحریک می‌کنند تا ماتریکس متالوپروتئینازها (MMP) و آنزیم‌های پروتئولیتیک ترشح نمایند که این آنزیم‌ها همراه با رادیکال‌های آزاد اکسیژن نوتروفیل‌ها، کلاژن و پروتئوگلیکان‌های غضروف را در عرض <strong>۲۴ تا ۴۸ ساعت</strong> لیز و متلاشی می‌کنند.</span></li>
+      <li><span class="li-content"><strong>استافیلوکوک به عنوان سوپرآنتی‌ژن (Superantigen):</strong> قطعات باکتری درصد بسیار بالایی از T-cellها را فعال کرده و طوفان سایتوکین‌های التهابی (IL-1, IL-4, IL-10, TNF, IL-12) به پا می‌کنند که التهاب مخرب را تشدید می‌نماید.</span></li>
+    </ul>
+  </div>
+
+  <!-- SECTION 6 -->
+  <div class="section-header sh-red" id="sec-6">
+    <div class="icon">🩺</div>
+    <span>بخش ۶: تظاهرات بالینی کلاسیک در بزرگسالان، نوزادان/کودکان و پرزنتیشن آتیپیک</span>
+  </div>
+
+  <div class="subsection sub-red">
+    <h4>تابلوی بالینی در بزرگسالان (نمونه زانوی چپ و شانه اسلاید استاد)</h4>
+    <p style="margin-bottom: 12px;">
+      آرتریت سپتیک به ویژه نوع استافیلوکوکی بیماری <strong>بسیار پر سر و صدایی</strong> است که معمولاً در عرض <strong>۱ تا ۲ روز</strong> به اوج شدت می‌رسد:
+    </p>
+
+    <div class="grid2">
+      <div class="mini-card mc-red">
+        <h5>علائم موضعی مفصلی کلاسیک</h5>
+        <ul class="list-styled red">
+          <li><span class="li-content"><strong>درد شدید و حاد:</strong> دردی خردکننده که راه رفتن را برای بیمار ناممکن می‌سازد.</span></li>
+          <li><span class="li-content"><strong>تورم، گرمی و قرمزی واضح:</strong> مفصل کاملاً متورم و در لمس داغ و ملتهب است.</span></li>
+          <li><span class="li-content"><strong>حساسیت لمسی شدید (Severe Tenderness):</strong> بیمار حتی اجازه دست زدن و معاینه مفصل را به پزشک نمی‌دهد.</span></li>
+          <li><span class="li-content"><strong>محدودیت بسیار شدید دامنه حرکات:</strong> حرکات فعال و غیرفعال مفصل شدیداً دردناک و محدود است و بیمار اندام را در فلکشن محافظت می‌کند.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-orange">
+        <h5>توزیع مفصلی و علائم سیستمیک</h5>
+        <ul class="list-styled orange">
+          <li><span class="li-content"><strong>الگوی تک‌مفصلی (Monoarticular):</strong> در <strong>۸۰ تا ۹۰ درصد موارد</strong> فقط یک مفصل درگیر است.</span></li>
+          <li><span class="li-content"><strong>درگیری دو یا چند مفصل (۱۰ تا ۲۰ ٪):</strong> عمدتاً در بیماران با زمینه آرتریت روماتوئید (RA) یا باکتریمی شدید استافیلوکوکی دیده می‌شود.</span></li>
+          <li><span class="li-content"><strong>تب بالا و تاکیکاردی:</strong> بیمار معمولاً توکسیک و بدحال است.</span></li>
+          <li><span class="li-content"><strong>مایع شکلاتی/چرکی:</strong> در تصویر اسلاید استاد، هنگام آسپیراسیون مایعی غلیظ و شکلاتی‌رنگ خارج می‌شود.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h4>تابلوی اختصاصی آرتریت سپسیس در نوزادان و اطفال کوچک</h4>
+    <div class="infobox ib-yellow">
+      <span class="ib-icon">👶</span>
+      <div>
+        <strong>شرح بالینی بسیار مهم استاد از اطفال:</strong> بچه‌ها و نوزادان قادر به تکلم و بیان محل درد نیستند. تابلوی بالینی در این گروه سنی با نشانه‌های زیر بروز می‌کند:
+        <ul class="list-styled" style="margin-top: 6px;">
+          <li><span class="li-content"><strong>بی‌قراری و گریه مداوم:</strong> نوزاد دائم گریه می‌کند و با دست زدن به اندام، گریه او تشدید می‌شود.</span></li>
+          <li><span class="li-content"><strong>امتناع از شیر خوردن (پس زدن پستان / Refusing feed):</strong> نوزاد که قبلاً خوب شیر می‌خورده، ناگهان از شیر خوردن امتناع می‌ورزد.</span></li>
+          <li><span class="li-content"><strong>تاکیکاردی و تب.</strong></span></li>
+          <li><span class="li-content"><strong>فلج کاذب (Pseudoparalysis):</strong> نوزاد اندام مبتلا را حرکت نمی‌دهد، پا یا دست خود را شل نگه داشته و اجازه هیچ‌گونه حرکتی به مفصل را نمی‌دهد.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h4>پرزنتیشن‌های آتیپیک (Atypical Presentation)</h4>
+    <div class="infobox ib-blue">
+      <span class="ib-icon">ℹ️</span>
+      <div>
+        <strong>هشدار تشخیصی:</strong> علائم تیپیک التهابی و تب در همه بیماران دیده نمی‌شود! در <strong>افراد بسیار مسن، بیماران نارسایی مزمن کلیه، مصرف‌کنندگان کورتون و داروهای سرکوب‌کننده ایمنی</strong> ممکن است بیمار بدون تب مراجعه کند یا علائم موضعی مفصلی خفیف باشد. عدم وجود تب هرگز آرتریت سپسیس را رد نمی‌کند.
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 7 -->
+  <div class="section-header sh-green" id="sec-7">
+    <div class="icon">🧪</div>
+    <span>بخش ۷: ارزیابی تشخیصی، تصویربرداری و آنالیز جامع مایع مفصلی (Synovial Fluid)</span>
+  </div>
+
+  <div class="subsection sub-green">
+    <h4>قانون اساسی طب در برخورد با مفصل متورم حاد: آرتروسنتز فوری</h4>
+    <div class="infobox ib-red">
+      <span class="ib-icon">💉</span>
+      <div>
+        <strong>قانون طلایی پزشکی:</strong> در بیماری که با مفصل متورم و داغ مراجعه می‌کند، کشیدن مایع مفصلی (Arthrocentesis) با <strong>سوزن قطور (Wide-bore needle)</strong> یک قانون الزامی است؛ اگر پزشک مایع را نکشد و بیمار آسیب ببیند، پزشک مورد سرزنش و مسئولیت قانونی قرار خواهد گرفت. مایع کشیده‌شده باید بلافاصله برای <strong>رنگ‌آمیزی گرم (Gram stain)، شمارش سلولی و کشت</strong> ارسال شود.
+      </div>
+    </div>
+
+    <h4>سایر اقدامات پاراکلینیک ضروری</h4>
+    <ul class="list-styled green">
+      <li><span class="li-content"><strong>کشت خون و ادرار همزمان:</strong> با توجه به این که انتشار بیماری غالباً هماتوژن است، در حداقل یک‌سوم بیماران باکتریمی وجود دارد؛ کشت خون حتماً باید پیش از آنتی‌بیوتیک گرفته شود.</span></li>
+      <li><span class="li-content"><strong>تست‌های آزمایشگاهی خون:</strong> آزمایش CBC (لوکوسیتوز با شیفت به چپ نوتروفیلی)، افزایش شدید ESR و CRP (مارکرهای فاز حاد التهابی) و پروکلسیتونین (نشانگر اختصاصی عفونت باکتریال).</span></li>
+      <li><span class="li-content"><strong>تست PCR (Polymerase Chain Reaction):</strong> در مواردی که باکتری‌ها دیررشد هستند (نظیر بروسلا و مایکوباکتریوم توبرکلوزیس) یا بیمار از قبل آنتی‌بیوتیک مصرف کرده و کشت منفی است.</span></li>
+    </ul>
+
+    <h4>روش‌های تصویربرداری و جایگاه تشخیصی آنها</h4>
+    <div class="grid2">
+      <div class="mini-card mc-green">
+        <h5>رادیوگرافی ساده (X-Ray)</h5>
+        <ul class="list-styled green">
+          <li><span class="li-content"><strong>مراحل اولیه:</strong> تغییر خاصی جز تورم بافت نرم نشان نمی‌دهد؛ ارزش آن رد شکستگی و بررسی وضعیت قبلی مفصل (آرتروز یا بیماری زمینه‌ای) است.</span></li>
+          <li><span class="li-content"><strong>مراحل پیشرفته:</strong> کاهش نامنظم فاصله مفصلی (Joint space narrowing)، اروزیون و فرسایش غضروف، تخریب استخوان ساب‌کندرال و در نهایت تشکیل پل استخوانی و آنکیلوز (Bony bridging/Ankylosis).</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-blue">
+        <h5>سونوگرافی، MRI و بیوپسی</h5>
+        <ul class="list-styled">
+          <li><span class="li-content"><strong>سونوگرافی:</strong> روشی عالی برای اثبات وجود مایع و هدایت سوزن در مفاصل عمقی مانند <strong>هیپ و شانه</strong> که با لمس ساده قابل تشخیص نیستند.</span></li>
+          <li><span class="li-content"><strong>CT-Scan و MRI:</strong> روش انتخابی در مفاصل آتیپیک و غیرقابل دسترس مانند مفصل <strong>ساکروایلییک، استرنوکلاویکولار و سمفیز پوبیس</strong>.</span></li>
+          <li><span class="li-content"><strong>بیوپسی سینوویال:</strong> به طور روتین در آرتریت پیوژنیک انجام نمی‌شود؛ کاربرد آن شک به عفونت مایکوباکتریومی (سل) یا قارچی است.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h4>جدول جامع مشخصات مایع سینوویال (اسلاید تدریس استاد سلیمانی)</h4>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>شاخص ارزیابی مایع</th>
+            <th>مفصل نرمال</th>
+            <th>غیرالتهابی (آرتروز - OA)</th>
+            <th>التهابی (مانند RA)</th>
+            <th>آرتریت سپسیس (Septic)</th>
+            <th>هموراژیک (خونریزی)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>حجم در زانو (mL)</strong></td>
+            <td>کمتر از ۳٫۵ (حدود ۲ تا ۳)</td>
+            <td>بیش از ۳٫۵</td>
+            <td>بیش از ۳٫۵</td>
+            <td><strong>بسیار زیاد (بیش از ۳٫۵)</strong></td>
+            <td>بیش از ۳٫۵</td>
+          </tr>
+          <tr>
+            <td><strong>شفافیت (Clarity)</strong></td>
+            <td>کاملاً شفاف و زلال</td>
+            <td>شفاف</td>
+            <td>نیمه‌شفاف تا کدر (Translucent/Opaque)</td>
+            <td><strong>کاملاً کدر و مات (Opaque)</strong></td>
+            <td>کدر و خونی</td>
+          </tr>
+          <tr>
+            <td><strong>رنگ مایع (Color)</strong></td>
+            <td>بی‌رنگ / زرد شفاف</td>
+            <td>زرد کم‌رنگ</td>
+            <td>زرد رنگ</td>
+            <td><strong>زرد مایل به سبز یا شکلاتی چرکی</strong></td>
+            <td>قرمز خونی</td>
+          </tr>
+          <tr>
+            <td><strong>گرانروی (Viscosity)</strong></td>
+            <td>بسیار بالا (کشسانی)</td>
+            <td>بالا</td>
+            <td>کاهش‌یافته</td>
+            <td><strong>به شدت کاهش‌یافته و رقیق</strong></td>
+            <td>متغیر</td>
+          </tr>
+          <tr>
+            <td><strong>شمارش WBC (در mm³)</strong></td>
+            <td>&lt; ۲۰۰</td>
+            <td>۲۰۰ تا ۲,۰۰۰</td>
+            <td>۲,۰۰۰ تا ۱۰,۰۰۰ (تا ۵۰,۰۰۰)</td>
+            <td><strong>بیش از ۵۰,۰۰۰ تا ۱۰۰,۰۰۰ (قطعی)</strong></td>
+            <td>۲۰۰ تا ۲,۰۰۰</td>
+          </tr>
+          <tr>
+            <td><strong>درصد نوتروفیل (PMN)</strong></td>
+            <td>&lt; ۲۵ ٪</td>
+            <td>&lt; ۲۵ ٪</td>
+            <td>بیش از ۵۰ ٪</td>
+            <td><strong>بیش از ۷۵ تا ۹۰ ٪ (چند هسته‌ای)</strong></td>
+            <td>۵۰ تا ۷۵ ٪</td>
+          </tr>
+          <tr>
+            <td><strong>کشت مایع (Culture)</strong></td>
+            <td>منفی</td>
+            <td>منفی</td>
+            <td>منفی</td>
+            <td><strong>اغلب مثبت (۷۰ تا ۹۰ درصد موارد)</strong></td>
+            <td>منفی</td>
+          </tr>
+          <tr>
+            <td><strong>پروتئین تام (g/dL)</strong></td>
+            <td>۱ تا ۲</td>
+            <td>۱ تا ۳</td>
+            <td>۳ تا ۵</td>
+            <td><strong>۳ تا ۵ (افزایش‌یافته)</strong></td>
+            <td>۴ تا ۶</td>
+          </tr>
+          <tr>
+            <td><strong>قند مایع مفصلی</strong></td>
+            <td>برابر قند خون</td>
+            <td>برابر قند خون</td>
+            <td>کمی کمتر از قند خون</td>
+            <td><strong>به شدت افت کرده (مصرف توسط باکتری)</strong></td>
+            <td>برابر قند خون</td>
+          </tr>
+          <tr>
+            <td><strong>آنزیم LDH</strong></td>
+            <td>پایین</td>
+            <td>پایین</td>
+            <td>افزایش‌یافته</td>
+            <td><strong>بسیار بالا و متغیر</strong></td>
+            <td>مشابه سرم</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SECTION 8 -->
+  <div class="section-header sh-orange" id="sec-8">
+    <div class="icon">🔍</div>
+    <span>بخش ۸: تشخیص‌های افتراقی بالینی بسیار مهم آرتریت سپسیس</span>
+  </div>
+
+  <div class="subsection sub-orange">
+    <h4>بیماری‌هایی با تابلوی بالینی مشابه آرتریت سپتیک</h4>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>تشخیص افتراقی</th>
+            <th>ویژگی‌ها و کلیدهای تمایز بالینی تدریس‌شده توسط استاد</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>آرتریت کریستالی (نقرس و نقرس کاذب)</strong></td>
+            <td>شروع بسیار حاد و دردناک با مایع کدر؛ تشخیص با مشاهده کریستال‌های سوزنی اسید اوریک (MSU) در نقرس یا کریستال‌های لوزی CPPD در نقرس کاذب با میکروسکوپ پلاریزان. (توجه: ممکن است نقرس و سپسیس همزمان وجود داشته باشند).</td>
+          </tr>
+          <tr>
+            <td><strong>آرتریت راکتیو (Reactive Arthritis)</strong></td>
+            <td><strong>سناریوی کلاسیک کلاسی استاد:</strong> جوان ۲ تا ۳ هفته پس از اسهال خونی یا اورتریت مراجعه می‌کند؛ آرتریت اولیگوآرتیکولار نامتقارن اندام تحتانی (مچ پا یا زانو)، همراه با التهاب تاندون (انتزیت)، زخم دهانی، ضایعات پوستی و یووئیت چشمی. مایع مفصلی التهابی اما استریل است.</td>
+          </tr>
+          <tr>
+            <td><strong>فلر آرتریت روماتوئید (RA Flare)</strong></td>
+            <td>آرتریت RA معمولاً مزمن و متقارن است؛ اما اگر بیمار RA ناگهان با یک مفصل حاداً متورم و تب‌دار مراجعه کرد، باید فرض را بر سوار شدن آرتریت سپسیس روی مفصل گذاشت و آسپیراسیون کرد.</td>
+          </tr>
+          <tr>
+            <td><strong>لوپوس (SLE) و سلول داسی‌شکل</strong></td>
+            <td>لوپوس معمولاً مفاصل کوچک را به صورت متقارن درگیر می‌کند؛ بیماران سیکل‌سل ممکن است با بحران درد یا عفونت با سالمونلا به صورت مونورآرتریت حاد مراجعه کنند.</td>
+          </tr>
+          <tr>
+            <td><strong>سینوویت ویلونودولار پیگمانته (PVNS)</strong></td>
+            <td>تومور خوش‌خیم سینوویوم؛ مونورآرتریت مزمن با مایع کشیده‌شده به رنگ <strong>خونابه‌ای یا شکلاتی بدون علائم حاد عفونی</strong>؛ تشخیص قطعی با بیوپسی سینوویوم.</td>
+          </tr>
+          <tr>
+            <td><strong>تروما و همارتروز (خونریزی داخل مفصل)</strong></td>
+            <td>سابقه تروما، پارگی رباط صلیبی (ACL) یا منیسک، یا در بیماران هموفیلی و مصرف‌کنندگان وارفارین. کشیدن مایع خونی خالص که لخته نمی‌شود کلید تمایز است.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SECTION 9 -->
+  <div class="section-header sh-red" id="sec-9">
+    <div class="icon">💊</div>
+    <span>بخش ۹: پروتکل‌های جامع درمان آنتی‌بیوتیکی تجربی و اختصاصی و تخلیه مفصل</span>
+  </div>
+
+  <div class="subsection sub-red">
+    <h4>اصول درمان اورژانسی: بستری و درمان وریدی تجربی (Empiric IV)</h4>
+    <div class="infobox ib-red">
+      <span class="ib-icon">🏥</span>
+      <div>
+        <strong>پروتکل آغاز درمان:</strong> بیمار مشکوک باید فوراً در بیمارستان بستری شود. پس از آسپیراسیون مایع، <strong>درمان آنتی‌بیوتیکی وریدی (IV) فوراً و بدون اتلاف وقت</strong> بر اساس رنگ‌آمیزی گرم و زمینه بیمار شروع می‌شود و نباید منتظر جواب کشت ماند. <strong>هیچ نیازی به تزریق مستقیم آنتی‌بیوتیک به داخل مفصل نیست</strong> و این کار به دلیل سینوویت شیمیایی ممنوع است.
+      </div>
+    </div>
+
+    <h4>پروتکل انتخاب آنتی‌بیوتیک بر اساس اسلاید تدریس استاد</h4>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>یافته اسمیر گرم یا وضعیت بالینی</th>
+            <th>آنتی‌بیوتیک انتخابی خط اول</th>
+            <th>دوز و نحوه تجویز وریدی (IV)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>کوکسی‌های گرم‌مثبت</strong> (احتمال بالای استاف اورئوس)</td>
+            <td>
+              • شک به MRSA: <strong>وانکومایسین (Vancomycin)</strong><br>
+              • اثبات حساس به متی‌سیلین (MSSA): سفازولین یا اگزاسیلین/نافسیلین
+            </td>
+            <td>
+              • وانکومایسین: ۱ گرم هر ۱۲ ساعت وریدی<br>
+              • سفازولین: ۲ گرم هر ۸ ساعت وریدی<br>
+              • اگزاسیلین / نافسیلین: ۲ گرم هر ۴ ساعت وریدی
+            </td>
+          </tr>
+          <tr>
+            <td><strong>باسیل‌های گرم‌منفی</strong> در اسمیر</td>
+            <td>سفالوسپورین‌های نسل سوم: <strong>سفت ریاکسون یا سفوتاکسیم</strong></td>
+            <td>
+              • سفت‌ریاکسون: ۱ تا ۲ گرم هر ۱۲ تا ۲۴ ساعت وریدی<br>
+              • سفوتاکسیم: ۱ گرم هر ۸ ساعت وریدی
+            </td>
+          </tr>
+          <tr>
+            <td><strong>شک به سودوموناس آئروژینوزا</strong> (معتادان تزریقی، زخم کف پا)</td>
+            <td>سفالوسپورین‌های ضد سودوموناس: <strong>سفپیم یا سفتازیدیم</strong></td>
+            <td>
+              • سفپیم (Cefepime): ۲ گرم هر ۸ ساعت وریدی<br>
+              • سفتازیدیم (Ceftazidime): ۲ گرم هر ۸ ساعت وریدی
+            </td>
+          </tr>
+          <tr>
+            <td><strong>عفونت‌های انتریک و ادراری در سالمندان</strong> (پس از عمل پروستات)</td>
+            <td>سفالوسپورین نسل سوم یا <strong>فلوروکینولون‌ها (لووفلوکساسین)</strong></td>
+            <td>لووفلوکساسین: ۵۰۰ میلی‌گرم وریدی روزانه یا سفتریاکسون</td>
+          </tr>
+          <tr>
+            <td><strong>اسمیر منفی در جوانان فعال جنسی</strong></td>
+            <td>پوشش نایسریا گونوره با سفالوسپورین نسل سوم</td>
+            <td>سفت‌ریاکسون: ۱ تا ۲ گرم وریدی روزانه</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>طول دوره استاندارد درمان آنتی‌بیوتیکی</h4>
+    <div class="grid2">
+      <div class="mini-card mc-red">
+        <h5>مدت زمان درمان بر اساس نوع میکروب</h5>
+        <div class="kv-row"><div class="kv-key">استافیلوکوک اورئوس:</div><div class="kv-value"><strong>حداقل ۴ هفته کامل</strong> درمان وریدی</div></div>
+        <div class="kv-row"><div class="kv-key">هموفیلوس و استرپتوکوک‌ها:</div><div class="kv-value"><strong>۲ هفته</strong> درمان وریدی</div></div>
+        <div class="kv-row"><div class="kv-key">باسیل‌های گرم‌منفی روده‌ای:</div><div class="kv-value"><strong>۳ تا ۴ هفته</strong> درمان وریدی</div></div>
+        <div class="kv-row"><div class="kv-key">نایسریا گونوره:</div><div class="kv-value"><strong>۷ تا ۱۴ روز</strong> درمان وریدی</div></div>
+      </div>
+
+      <div class="mini-card mc-blue">
+        <h5>روش‌های تخلیه و درناژ مفصلی (نکته امتحانی کلیدی)</h5>
+        <ul class="list-styled">
+          <li><span class="li-content"><strong>مفصل زانو:</strong> تخلیه و آسپیراسیون روزانه با نیدل تا زمان منفی شدن کشت و کاهش حجم مایع؛ در صورت عدم پاسخ پس از چند روز، آرتروتومی می‌شود.</span></li>
+          <li><span class="li-content"><strong>مفصل هیپ و شانه (نکته امتحانی قطعی):</strong> مفاصل هیپ و شانه حتماً باید <strong>آرتروتومی باز (جراحی)</strong> شوند، با سالین نرمال شستشو داده شده و درن کار گذاشته شود تا مانع نکروز سر فمور ناشی از فشار چرک گردد.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="infobox ib-yellow">
+      <span class="ib-icon">🚶</span>
+      <div>
+        <strong>نکات توانبخشی و دارویی تکمیلی:</strong> بی‌حرکت‌سازی مفصل فقط در ۱ تا ۲ روز اول مجاز است و بیمار پس از آن می‌تواند بدون تحمل وزن (با عصا) حرکت کند. <strong>استفاده از داروهای کورتون‌دار داخل مفصلی مطلقاً ممنوع است.</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 10 -->
+  <div class="section-header sh-teal" id="sec-10">
+    <div class="icon">🐐</div>
+    <span>بخش ۱۰: بروسلوز (تب مالت): اپیدمیولوژی، باکتریولوژی، مخازن، اریتریتول و پاتوژنز</span>
+  </div>
+
+  <div class="subsection sub-teal">
+    <h4>اپیدمیولوژی، بار بیماری در ایران و فصل شیوع</h4>
+    <p style="margin-bottom: 12px;">
+      بروسلوز یک عفونت مشترک بین انسان و دام (Zoonosis) است. در ایران به علت وفور دامداری‌های سنتی شیوع بالایی دارد؛ طبق مقاله معتبر منتشرشده در مجله NEJM حدود ۲۰ سال پیش، بیش از <strong>۱۷,۷۶۵ مورد</strong> در یک سال در کشور به ثبت رسیده است. مناطقی نظیر شهرستان خاتم و ندوشن یزد به دلیل دامداری‌های سنتی وفور بالایی دارند.
+    </p>
+
+    <div class="infobox ib-green">
+      <span class="ib-icon">🥛</span>
+      <div>
+        <strong>راه اصلی انتقال در بهار:</strong> در فصل بهار که مصرف محصولات دامی سنتی غیرپاستوریزه به ویژه <strong>پنیرهای تازه سنتی تهیه شده با شیر نجوشیده، سرشیر و آغوز</strong> افزایش می‌یابد، شیوع بیماری اوج می‌گیرد. انتقال همچنین از طریق تماس پوستی قصاب‌ها و دامداران با ترشحات زایمان و جفت دام رخ می‌دهد.
+      </div>
+    </div>
+
+    <h4>ویژگی‌های باکتریولوژیک بروسلا</h4>
+    <div class="grid2">
+      <div class="mini-card mc-teal">
+        <h5>مورفولوژی و شرایط کشت</h5>
+        <ul class="list-styled teal">
+          <li><span class="li-content"><strong>مورفولوژی:</strong> کوکوباسیل کوچک گرم‌منفی، بدون کپسول، فاقد حرکت، بدون اسپور، به صورت منفرد یا تجمعی.</span></li>
+          <li><span class="li-content"><strong>شرایط رشد:</strong> باکتری هوازی، نیازمند محیط‌های کشت غنی اختصاصی، دمای ۳۷ درجه سانتی‌گراد و pH حدود ۶٫۶ تا ۷٫۴.</span></li>
+          <li><span class="li-content"><strong>دیررشد بودن:</strong> در محیط‌های ساده آگار رشد نمی‌کند و محیط کشت باید حداقل <strong>۴ تا ۶ هفته</strong> نگهداری شود.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-blue">
+        <h5>گونه‌ها و مخازن حیوانی بروسلا</h5>
+        <div class="kv-row"><div class="kv-key">Brucella melitensis:</div><div class="kv-value">مخزن در <strong>بز و گوسفند</strong>؛ <strong>شایع‌ترین و مهاجم‌ترین</strong> عامل بیماری انسان</div></div>
+        <div class="kv-row"><div class="kv-key">Brucella abortus:</div><div class="kv-value">مخزن در گاو؛ بیماری خفیف‌تر</div></div>
+        <div class="kv-row"><div class="kv-key">Brucella suis:</div><div class="kv-value">مخزن در خوک؛ تمایل به ایجاد آبسه‌های چرکی</div></div>
+        <div class="kv-row"><div class="kv-key">Brucella canis:</div><div class="kv-value">مخزن در سگ‌ها؛ بیماری نادر در انسان</div></div>
+      </div>
+    </div>
+
+    <div class="infobox ib-purple">
+      <span class="ib-icon">🔬</span>
+      <div>
+        <strong>پدیده مولکولی اریتریتول (Erythritol):</strong> جفت و پرده‌های جنینی حیوانات (بز، گوسفند، گاو) حاوی ماده‌ای قندی به نام <strong>اریتریتول</strong> است که فاکتور رشد اختصاصی بروسلا بوده و موجب تکثیر انفجاری باکتری در جفت و سقط جنین در دام‌ها می‌شود. <strong>جفت انسان فاقد اریتریتول است</strong>؛ لذا بروسلا تکثیر اختصاصی جفتی وابسته به اریتریتول در انسان ایجاد نمی‌کند.
+      </div>
+    </div>
+
+    <h4>پاتوژنز و زندگی درون‌سلولی در سیستم رتیکولوآندوتلیال (RES)</h4>
+    <p style="margin-bottom: 10px;">
+      پس از ورود باکتری از مخاط گوارش یا پوست:
+    </p>
+    <ul class="list-styled purple">
+      <li><span class="li-content"><strong>بلعیده شدن توسط فاگوسیت‌ها:</strong> باکتری توسط ماکروفاژها بلعیده شده اما مانع از ادغام فاگوزوم با لیزوزوم شده و درون ماکروفاژ زنده مانده و تکثیر می‌یابد.</span></li>
+      <li><span class="li-content"><strong>استقرار در ارگان‌های رتیکولوآندوتلیال:</strong> باکتری همراه ماکروفاژها به گره‌های لنفاوی، کبد، طحال و مغز استخوان منتشر می‌شود.</span></li>
+      <li><span class="li-content"><strong>تشکیل گرانولوم:</strong> تشکیل گرانولوم‌های حاوی لنفوسیت، سلول‌های اپیتلیوئید و ژانت سل همراه با نکروز پنیرکی (کازئوزاسیون) و آبسه‌های موضعی.</span></li>
+    </ul>
+  </div>
+
+  <!-- SECTION 11 -->
+  <div class="section-header sh-indigo" id="sec-11">
+    <div class="icon">🦴</div>
+    <span>بخش ۱۱: تظاهرات اسکلتی-عضلانی بروسلوز، سرولوژی و پروتکل درمانی</span>
+  </div>
+
+  <div class="subsection sub-indigo">
+    <h4>دوره کمون و تظاهرات سیستمیک عمومی بروسلوز</h4>
+    <div class="kv-row"><div class="kv-key">دوره کمون (Incubation period):</div><div class="kv-value">معمولاً <strong>۱ تا ۳ یا ۴ هفته</strong> بیمار بدون علامت است.</div></div>
+    <div class="kv-row"><div class="kv-key">تب مواج (Undulant Fever):</div><div class="kv-value">تب ممکن است تا ۴۰ الی ۴۱ درجه بالا رفته و در صبحگاه تا ۳۷ درجه افت کند. پیک تب در عصر و شب است.</div></div>
+    <div class="kv-row"><div class="kv-key">علائم همراه تیپیک:</div><div class="kv-value"><strong>تعریق شبانه شدید و بدبو</strong>، سردرد شدید، ضعف و کوفتگی مفرط، بی‌اشتهایی، لاغری و افسردگی (Depression).</div></div>
+
+    <h4 style="margin-top: 20px;">درگیری‌های اسکلتی-عضلانی بروسلوز (در ۲۰ تا ۴۰ درصد بیماران)</h4>
+    <div class="grid2">
+      <div class="mini-card mc-blue">
+        <h5>۱. ساکروایلییت (Sacroiliitis) - شایع‌ترین فرم کلی</h5>
+        <ul class="list-styled">
+          <li><span class="li-content"><strong>جمعیت هدف:</strong> شایع‌ترین شکل درگیری؛ به ویژه در <strong>افراد جوان</strong> رخ می‌دهد.</span></li>
+          <li><span class="li-content"><strong>درگیری یک‌طرفه:</strong> در ۷۰ تا ۹۰ درصد موارد <strong>یک‌طرفه (Unilateral)</strong> است.</span></li>
+          <li><span class="li-content"><strong>شرح‌حال بالینی استاد (بیمار قصاب با وزن بالای ۱۰۰ کیلو):</strong> درد شدید و فلج‌کننده یک‌طرفه لگن و باسن که به خوبی لوکالیزه نمی‌شود، حساسیت لمسی فوق‌العاده شدید ساکروایلییک، ناتوانی مطلق از راه رفتن و چشمان اشک‌بار از شدت درد.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-green">
+        <h5>۲. آرتریت محیطی (Peripheral Arthritis)</h5>
+        <ul class="list-styled green">
+          <li><span class="li-content"><strong>ماهیت:</strong> عمدتاً به صورت واکنشی (Reactive)، تک‌مفصلی و غیرخورنده.</span></li>
+          <li><span class="li-content"><strong>مفاصل هدف:</strong> مفاصل بزرگ اندام تحتانی نظیر <strong>زانو و هیپ</strong>؛ با شیوع کمتر مچ دست، مچ پا و استرنوکلاویکولار.</span></li>
+          <li><span class="li-content"><strong>مایع مفصلی:</strong> مایع التهابی است ولی کشت آن معمولاً منفی می‌شود.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mini-card mc-orange" style="margin-top: 14px;">
+      <h5>۳. اسپوندیلیت و اسپوندیلودیسکیت مهره‌ها (Spondylitis)</h5>
+      <p style="line-height: 1.8;">
+        درگیری ستون فقرات در <strong>۶ تا ۵۰ درصد</strong> موارد بروسلوز اسکلتی دیده می‌شود و عمدتاً در <strong>افراد مسن و سالمندان</strong> رخ می‌دهد. مهره‌های کمری (Lumbar) و توراسیک تحتانی شایع‌ترین محل‌ها هستند. ناشی از تهاجم مستقیم میکروب به دیسک و بدنه مهره است و می‌تواند آبسه‌های پارااسپینال ایجاد کند. نمای کلاسیک رادیولوژی آن <strong>علامت پدرو پونز (Pedro Pons Sign)</strong> شامل اروزیون گوشه قدامی-فوقانی مهره همراه با استئوفیت‌سازی است. روش تشخیصی ارجح <strong>MRI ستون فقرات</strong> است.
+      </p>
+    </div>
+
+    <h4>رویکرد تشخیصی، سرولوژی و آزمایشگاه در بروسلوز</h4>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>تست آزمایشگاهی</th>
+            <th>یافته تشخیصی اختصاصی</th>
+            <th>نکات تفسیری استاد سلیمانی</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>آزمایش‌های عمومی خون</strong></td>
+            <td>WBC نرمال یا لوکوپنی همراه با لنفوسیتوز نسبی، آنمی خفیف، ترومبوسایتوپنی، افزایش خفیف آنزیم‌های کبدی و بیلی‌روبین</td>
+            <td>ESR و CRP ممکن است بالا باشند ولی می‌توانند کاملاً نرمال نیز باشند.</td>
+          </tr>
+          <tr>
+            <td><strong>آنالیز مایع مفصلی</strong></td>
+            <td>تعداد لکوسیت بین ۱۰,۰۰۰ تا ۱۵,۰۰۰، قند کاهش‌یافته، پروتئین بیشتر از ۳ g/dL</td>
+            <td>مایع التهابی است اما کشت باکتریولوژی مایع معمولاً منفی گزارش می‌شود.</td>
+          </tr>
+          <tr>
+            <td><strong>تست رایت لوله‌ای استاندارد (STAT / Wright)</strong></td>
+            <td><strong>تیتر ۱:۱۶۰ یا بالاتر</strong> نشانه مثبت بودن عفونت است</td>
+            <td>ممکن است به علت ویبریو کلرا، فرانسیسلا یا اشریشیا کولای مثبت کاذب شود. پدیده پروزون منفی کاذب می‌دهد.</td>
+          </tr>
+          <tr>
+            <td><strong>تست ۲-مرکاپتواتانول (2ME)</strong></td>
+            <td>سنجش اختصاصی آنتی‌بادی IgG فعال</td>
+            <td>شکستن IgM؛ نشان‌دهنده <strong>عفونت فعال، مزمن یا عودکننده</strong> است.</td>
+          </tr>
+          <tr>
+            <td><strong>تست الایزا (ELISA)</strong></td>
+            <td>سنجش IgM، IgG و IgA</td>
+            <td>بالا بودن IgM نشانه عفونت حاد و IgG نشانه عفونت مزمن است.</td>
+          </tr>
+          <tr>
+            <td><strong>کشت خون و مغز استخوان</strong></td>
+            <td>کشت خون مثبت در ۵۰ تا ۷۰ ٪ موارد؛ <strong>کشت مغز استخوان گلد استاندارد با حساسیت ۸۰ تا ۹۰ ٪</strong></td>
+            <td>به دلیل رشد درون‌سلولی باکتری در سلول‌های خونساز مغز استخوان، حساسیت آن از خون بالاتر است.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>پروتکل‌های درمانی استاندارد بروسلوز</h4>
+    <div class="grid2">
+      <div class="mini-card mc-green">
+        <h5>رژیم درمانی استاندارد اول (کمترین میزان عود)</h5>
+        <ul class="list-styled green">
+          <li><span class="li-content"><strong>داکسی‌سایکلین:</strong> ۱۰۰ میلی‌گرم خوراکی هر ۱۲ ساعت به مدت <strong>۶ تا ۸ هفته</strong>.</span></li>
+          <li><span class="li-content"><strong>استرپتومایسین:</strong> ۱ گرم روزانه تزریق عضلانی به مدت <strong>۲ تا ۳ هفته اول</strong> (یا جنتامایسین ۵ mg/kg روزانه به مدت ۷ تا ۱۴ روز).</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-blue">
+        <h5>رژیم تمام‌خوراکی سازمان بهداشت جهانی (WHO)</h5>
+        <ul class="list-styled">
+          <li><span class="li-content"><strong>داکسی‌سایکلین:</strong> ۱۰۰ میلی‌گرم خوراکی هر ۱۲ ساعت به مدت <strong>۶ هفته</strong>.</span></li>
+          <li><span class="li-content"><strong>ریفامپین:</strong> ۶۰۰ تا ۹۰۰ میلی‌گرم خوراکی روزانه ناشتا به مدت <strong>۶ هفته</strong>. (میزان عود اندکی بالاتر از رژیم استرپتومایسین است).</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="infobox ib-teal">
+      <span class="ib-icon">💊</span>
+      <div>
+        <strong>درمان در بارداری و کودکان زیر ۸ سال:</strong> به دلیل ممنوعیت مطلق داکسی‌سایکلین در اطفال زیر ۸ سال و زنان باردار، رژیم انتخابی <strong>کوتریموکسازول (TMP-SMX) همراه با ریفامپین</strong> به مدت ۶ هفته می‌باشد.
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 12 -->
+  <div class="section-header sh-indigo" id="sec-12">
+    <div class="icon">🫁</div>
+    <span>بخش ۱۲: درسنامه مکمل - سل ستون مهره‌ها (بیماری پات - TB Spondylodiscitis)</span>
+  </div>
+
+  <div class="subsection sub-indigo">
+    <h4>اپیدمیولوژی و اهمیت درگیری ستون فقرات در سل</h4>
+    <p style="margin-bottom: 12px;">
+      همان‌طور که استاد سلیمانی در میانه درسنامه اشاره نمودند، پس از بروسلوز بحث سل ستون مهره‌ها بررسی می‌شود. سل ستون مهره‌ها یا بیماری پات (Pott's Disease) شایع‌ترین و مخرب‌ترین فرم سل استخوانی-مفصلی است:
+    </p>
+
+    <div class="grid2">
+      <div class="mini-card mc-red">
+        <h5>آمار بالینی سل خارج ریوی</h5>
+        <div class="kv-row"><div class="kv-key">سل خارج ریوی:</div><div class="kv-value">۲۰ ٪ کل موارد سل</div></div>
+        <div class="kv-row"><div class="kv-key">درگیری اسکلتی-عضلانی:</div><div class="kv-value">۱۰ تا ۳۵ ٪ از سل‌های خارج ریوی</div></div>
+        <div class="kv-row"><div class="kv-key">سهم ستون مهره‌ها:</div><div class="kv-value"><strong>۵۰ ٪ از کل موارد سل استخوانی در ستون فقرات رخ می‌دهد!</strong></div></div>
+        <div class="kv-row"><div class="kv-key">شایع‌ترین محل درگیری:</div><div class="kv-value"><strong>ناحیه توراکولومبار (T10 تا L2)</strong></div></div>
+      </div>
+
+      <div class="mini-card mc-purple">
+        <h5>پاتوژنز تخریب مهره و عوارض</h5>
+        <ul class="list-styled purple">
+          <li><span class="li-content"><strong>مسیر انتشار:</strong> انتشار هماتوژن از طریق شبکه وریدی باتسون به بخش قدامی مهره.</span></li>
+          <li><span class="li-content"><strong>لیز دیسک و تنه مهره:</strong> انتشار عفونت به فضای دیسک بین‌مهره‌ای و تخریب همزمان تنه دو مهره مجاور.</span></li>
+          <li><span class="li-content"><strong>کیفوز زاویه‌دار (Gibbus Deformity):</strong> متلاشی شدن بخش قدامی تنه مهره و زاویه‌دار شدن ستون فقرات به سمت جلو.</span></li>
+          <li><span class="li-content"><strong>آبسه سرد (Cold Abscess):</strong> تشکیل آبسه‌های بزرگ بدون علائم حاد التهابی گرم در عضلات پسواس و اطراف مهره.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h4>سیر بالینی سه‌مرحله‌ای بیماری پات</h4>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>مرحله بیماری پات</th>
+            <th>طول دوره</th>
+            <th>علائم و نشانه‌های بالینی</th>
+            <th>یافته‌های پاراکلینیک و رادیولوژی</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>مرحله اول: شروع (Onset)</strong></td>
+            <td>چند ماه تا ۱ سال</td>
+            <td>درد مبهم مکانیکی کمر یا پشت، <strong>شروع درد شبانه (علامت هشدار کلیدی)</strong>، اسپاسم خفیف عضلات پارااسپینال.</td>
+            <td>رادیوگرافی ساده در ابتدا می‌تواند کاملاً نرمال باشد؛ ESR کم‌کم افزایش می‌یابد.</td>
+          </tr>
+          <tr>
+            <td><strong>مرحله دوم: تخریب (Destruction)</strong></td>
+            <td>چند ماه تا ۱ سال</td>
+            <td>درد شدید دائمی شبانه، خشکی چوب‌مانند ستون فقرات، کاهش وزن، تب خفیف و تعریق شبانه، ایجاد <strong>کیفوز زاویه‌دار (Gibbus)</strong>، دردهای رادیکولار و علائم فشردگی نخاع (پاراپلژی پات) ناشی از آبسه سرد.</td>
+            <td>کاهش شدید فضای دیسک، کلاپس تنه مهره و توده بافت نرم پاراورتبرال در عکس ساده؛ <strong>MRI حساس‌ترین روش تشخیصی</strong> جهت ارزیابی آبسه و طناب نخاعی است.</td>
+          </tr>
+          <tr>
+            <td><strong>مرحله سوم: ترمیم (Repair)</strong></td>
+            <td>پس از دوره طولانی</td>
+            <td>قطع علائم سیستمیک و تب، تبدیل درد به درد مزمن مکانیکی، ماندگاری دفورمیتی استخوانی و عوارض عصبی در صورت عدم درمان به موقع.</td>
+            <td>تشکیل پل‌های استخوانی گسترده بین مهره‌ها، کلسیفیکاسیون و آنکیلوز استخوانی مهره‌ها.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>تشخیص قطعی و پروتکل درمانی بیماری پات</h4>
+    <div class="grid2">
+      <div class="mini-card mc-blue">
+        <h5>روش‌های تشخیصی گلد استاندارد</h5>
+        <ul class="list-styled">
+          <li><span class="li-content"><strong>بیوپسی سوزنی با هدایت CT (استاندارد طلایی):</strong> نمونه‌برداری از ضایعه مهره یا آبسه سرد.</span></li>
+          <li><span class="li-content"><strong>پاتولوژی و باکتریولوژی:</strong> مشاهده گرانولوم با نکروز کازئوز (پنیرکی) در ۷۵٪ موارد، اسمیر اسید فاست و کشت مثبت M. tuberculosis در ۵۰٪ موارد.</span></li>
+          <li><span class="li-content"><strong>تست پوستی PPD:</strong> در ۹۰ تا ۹۵ درصد بیماران مثبت است. ESR معمولاً بسیار بالا (میانگین ۶۵ تا ۱۰۰ mm/hr) است.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-green">
+        <h5>رژیم درمانی دارویی ضدسل (طول دوره ۹ تا ۱۸ ماه)</h5>
+        <ul class="list-styled green">
+          <li><span class="li-content"><strong>ایزونیازید (INH):</strong> ۵ mg/kg روزانه (حداکثر ۳۰۰mg) + ویتامین B6.</span></li>
+          <li><span class="li-content"><strong>ریفامپین (RIF):</strong> ۱۰ mg/kg روزانه (حداکثر ۶۰۰mg) ناشتا.</span></li>
+          <li><span class="li-content"><strong>پیرازینامید (PZA):</strong> ۲۰ mg/kg روزانه در ۲ ماه نخست.</span></li>
+          <li><span class="li-content"><strong>اتامبوتول (EMB):</strong> ۱۵ تا ۲۰ mg/kg روزانه در ۲ ماه نخست.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="infobox ib-red">
+      <span class="ib-icon">🔪</span>
+      <div>
+        <strong>اندیکاسیون‌های قطعی مداخله جراحی در بیماری پات:</strong>
+        ۱. ظهور یا پیشرفت نقایص عصبی و فشردگی طناب نخاعی علی‌رغم درمان دارویی
+        ۲. آبسه‌های بزرگ سرد مقاوم به درمان طبی
+        ۳. ناپایداری مکانیکی ستون فقرات
+        ۴. کیفوز شدید با زاویه بیش از ۴۰ درجه جهت جلوگیری از فلج اندام‌ها.
+      </div>
+    </div>
+  </div>
+
+  <!-- SUMMARY BOX -->
+  <div class="subsection sub-indigo" style="background: #eef2ff; border-top-color: #1a237e;">
+    <h4>📌 جمع‌بندی نکات طلایی امتحانی استاد سلیمانی (تطبیق سریع با وویس)</h4>
+    <ul class="list-styled purple">
+      <li><span class="li-content"><strong>آرتریت سپسیس:</strong> اورژانس قطعی طب بالینی؛ استاف اورئوس علت شماره یک؛ زانو شایع‌ترین مفصل؛ آرتریت روماتوئید شایع‌ترین عامل زمینه‌ساز. غضروف ظرف ۲۴ تا ۴۸ ساعت به دلیل MMPها و توکسین‌ها لیز می‌شود.</span></li>
+      <li><span class="li-content"><strong>علائم در اطفال:</strong> گریه تسلی‌ناپذیر، پس زدن شیر مادر، تب و تاکیکاردی، و فلج کاذب اندام (Pseudoparalysis).</span></li>
+      <li><span class="li-content"><strong>مایع مفصلی سپتیک:</strong> کدر و چرکی، زرد مایل به سبز، WBC بالای ۵۰ هزار با بیش از ۷۵ تا ۹۰ درصد PMN، قند به شدت افت‌کرده و پروتئین بالا.</span></li>
+      <li><span class="li-content"><strong>نکته حیاتی درناژ:</strong> زانو با کشیدن مکرر روزانه اداره می‌شود، ولی <strong>مفصل هیپ و شانه نیازمند آرتروتومی باز فوری در اتاق عمل</strong> هستند.</span></li>
+      <li><span class="li-content"><strong>بروسلوز:</strong> بروسلا ملیتنسیس مهاجم‌ترین پاتوژن است؛ اریتریتول علت سقط در دام است که در جفت انسان وجود ندارد؛ ساکروایلییت یک‌طرفه در جوانان شایع‌ترین فرم اسکلتی است؛ داکسی‌سایکلین ۶ تا ۸ هفته + استرپتومایسین ۲ تا ۳ هفته بهترین رژیم است.</span></li>
+    </ul>
+  </div>
+
+</div> <!-- END MAIN -->
+
+<!-- ===================== FOOTER ===================== -->
+<div class="footer">
+  دانشگاه علوم پزشکی • درسنامه جامع روماتولوژی و عفونت‌های اسکلتی-مفصلی<br>
+  تدریس: دکتر حسین سلیمانی • تنظیم و انطباق تعاملی خط زمانی وویس: احمدرضا عبداللهی پور
+</div>
+
+<!-- ===================== INTERACTIVE STUDY TOOLBAR & MODALS ===================== -->
+<div id="highlight-panel">
+  <span>🖍️ ابزار مطالعه:</span>
+  <button class="hl-btn hl-btn-yellow" onclick="applyColorHighlight('#fff59d')" title="زرد"></button>
+  <button class="hl-btn hl-btn-green" onclick="applyColorHighlight('#c8e6c9')" title="سبز"></button>
+  <button class="hl-btn hl-btn-blue" onclick="applyColorHighlight('#bbdefb')" title="آبی"></button>
+  <button class="hl-btn hl-btn-pink" onclick="applyColorHighlight('#f8bbd0')" title="صورتی"></button>
+  <button class="panel-action-btn" onclick="addNoteAtSelection()">📝 یادداشت</button>
+  <button class="panel-action-btn" onclick="viewAllNotes()">🔍 لیست یادداشت‌ها</button>
+  <button class="panel-action-btn panel-action-btn-red" onclick="clearSelectedHighlight()">❌ پاک‌کردن</button>
+  <button class="panel-action-btn" style="background:#2e7d32;" onclick="exportModifiedHTML()">📥 خروجی گرفتن از فایل</button>
+</div>
+
+<!-- پنجره مودال ثبت/ویرایش یادداشت -->
+<div class="modal-overlay" id="note-edit-modal">
+  <div class="modal-card">
+    <h4 id="modal-title">ثبت یادداشت جدید در این محل</h4>
+    <textarea class="modal-textarea" id="modal-note-input" placeholder="نکته کلاسی خود از وویس استاد را یادداشت کنید..."></textarea>
+    <div class="modal-actions">
+      <button class="btn btn-primary" onclick="saveNoteChanges()">💾 ذخیره تغییرات</button>
+      <button class="btn btn-danger" id="btn-delete-note" onclick="deleteActiveNote()">❌ حذف یادداشت</button>
+      <button class="btn btn-secondary" onclick="closeNoteModal()">انصراف</button>
+    </div>
+  </div>
+</div>
+
+<!-- پنجره مودال لیست همه‌ی یادداشت‌ها -->
+<div class="modal-overlay" id="all-notes-modal">
+  <div class="modal-card" style="max-height: 80%; overflow-y: auto; max-width: 600px;">
+    <h4>📋 تمام یادداشت‌های ثبت‌شده شما در حین گوش دادن به وویس</h4>
+    <div id="all-notes-list" style="margin-bottom: 20px;"></div>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" onclick="closeAllNotesModal()">بستن پنجره</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== JAVASCRIPT LOGIC ===================== -->
+<script>
+  const storageStateKey = "infectious_arthritis_soleimani_v2_state";
+  let savedRange = null; 
+  let activeMarker = null;
+
+  document.addEventListener("DOMContentLoaded", () => {
+    loadPageState();
+  });
+
+  function savePageState() {
+    const mainHTML = document.querySelector('.main').innerHTML;
+    localStorage.setItem(storageStateKey, mainHTML);
+  }
+
+  function loadPageState() {
+    const savedHTML = localStorage.getItem(storageStateKey);
+    if (savedHTML) {
+      document.querySelector('.main').innerHTML = savedHTML;
+    }
+  }
+
+  function applyColorHighlight(colorHex) {
+    const selection = window.getSelection();
+    if (!selection.rangeCount || selection.isCollapsed) {
+      alert("لطفاً ابتدا متنی از جزوه را با ماوس یا لمس انتخاب کنید.");
+      return;
+    }
+
+    const main = document.querySelector('.main');
+    const originalEditable = main.contentEditable;
+    
+    main.contentEditable = "true";
+    
+    try {
+      document.execCommand("styleWithCSS", false, true);
+      document.execCommand("backColor", false, colorHex);
+    } catch (e) {
+      console.error("خطای هایلایت:", e);
+    }
+    
+    main.contentEditable = originalEditable;
+    selection.removeAllRanges();
+    savePageState();
+  }
+
+  function clearSelectedHighlight() {
+    applyColorHighlight('transparent');
+  }
+
+  function addNoteAtSelection() {
+    const selection = window.getSelection();
+    if (!selection.rangeCount || selection.isCollapsed) {
+      alert("لطفاً ابتدا بخشی از متن را انتخاب کنید تا یادداشت به آن وصل شود.");
+      return;
+    }
+
+    savedRange = selection.getRangeAt(0).cloneRange();
+    activeMarker = null; 
+    document.getElementById("modal-title").innerText = "ثبت یادداشت جدید در این محل";
+    document.getElementById("modal-note-input").value = "";
+    document.getElementById("btn-delete-note").style.display = "none";
+    document.getElementById("note-edit-modal").style.display = "flex";
+  }
+
+  function saveNoteChanges() {
+    const text = document.getElementById("modal-note-input").value.trim();
+    if (!text) {
+      alert("لطفاً متن یادداشت را وارد کنید.");
+      return;
+    }
+
+    if (activeMarker === null) {
+      if (savedRange) {
+        const marker = document.createElement("span");
+        marker.className = "note-marker";
+        marker.setAttribute("data-note", text);
+        marker.innerHTML = `📝<span class="note-tooltip">${escapeHTML(text)}</span>`;
+        marker.contentEditable = "false";
+        
+        try {
+          savedRange.collapse(false);
+          savedRange.insertNode(marker);
+        } catch (e) {
+          console.error("Error inserting marker:", e);
+          alert("امکان درج یادداشت در این موقعیت نیست. لطفاً بخش ساده‌تری از متن را انتخاب کنید.");
+        }
+        savedRange = null;
+      } else {
+        alert("محدوده متن انتخاب شده معتبر نیست.");
+        return;
+      }
+    } else {
+      activeMarker.setAttribute("data-note", text);
+      activeMarker.innerHTML = `📝<span class="note-tooltip">${escapeHTML(text)}</span>`;
+    }
+
+    closeNoteModal();
+    savePageState();
+  }
+
+  function deleteActiveNote() {
+    if (activeMarker && confirm("آیا مایل به حذف این یادداشت هستید؟")) {
+      activeMarker.remove();
+      closeNoteModal();
+      savePageState();
+    }
+  }
+
+  function closeNoteModal() {
+    document.getElementById("note-edit-modal").style.display = "none";
+    activeMarker = null;
+    savedRange = null;
+  }
+
+  document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("note-marker")) {
+      activeMarker = e.target;
+      const savedText = activeMarker.getAttribute("data-note") || "";
+      document.getElementById("modal-title").innerText = "مشاهده و ویرایش یادداشت";
+      document.getElementById("modal-note-input").value = savedText;
+      document.getElementById("btn-delete-note").style.display = "inline-block";
+      document.getElementById("note-edit-modal").style.display = "flex";
+    }
+  });
+
+  function viewAllNotes() {
+    const markers = document.querySelectorAll(".note-marker");
+    const listContainer = document.getElementById("all-notes-list");
+    listContainer.innerHTML = "";
+
+    if (markers.length === 0) {
+      listContainer.innerHTML = '<p style="text-align:center; color:var(--muted); font-size:14px; padding:20px 0;">هیچ یادداشتی تاکنون ثبت نشده است.</p>';
+      document.getElementById("all-notes-modal").style.display = "flex";
+      return;
+    }
+
+    markers.forEach((marker, index) => {
+      const noteText = marker.getAttribute("data-note") || "";
+      const context = marker.previousSibling ? marker.previousSibling.textContent.slice(-35) : "...";
+      
+      const card = document.createElement("div");
+      card.className = "mini-card mc-blue";
+      card.style.marginBottom = "12px";
+      card.innerHTML = `
+        <div style="font-size:11px; color:var(--muted); margin-bottom:5px;">یادداشت شماره ${index + 1} (متن مجاور: "...${escapeHTML(context)}")</div>
+        <div style="font-weight:bold; font-size:14px; line-height:1.6; white-space:pre-wrap; color:var(--text);">${escapeHTML(noteText)}</div>
+        <div style="margin-top:10px; display:flex; gap:8px;">
+          <button onclick="scrollToMarker(${index})" class="tag tag-blue" style="border:none; cursor:pointer; padding:4px 10px;">🔍 پرش به متن</button>
+          <button onclick="deleteMarkerFromList(${index})" class="tag tag-red" style="border:none; cursor:pointer; padding:4px 10px;">❌ حذف</button>
+        </div>
+      `;
+      listContainer.appendChild(card);
+    });
+
+    document.getElementById("all-notes-modal").style.display = "flex";
+  }
+
+  window.scrollToMarker = function(index) {
+    const markers = document.querySelectorAll(".note-marker");
+    if (markers[index]) {
+      closeAllNotesModal();
+      markers[index].scrollIntoView({ behavior: "smooth", block: "center" });
+      
+      const originalBg = markers[index].style.backgroundColor;
+      markers[index].style.backgroundColor = "#ff5252";
+      markers[index].style.transform = "scale(1.4)";
+      
+      setTimeout(() => {
+        markers[index].style.backgroundColor = originalBg;
+        markers[index].style.transform = "scale(1)";
+      }, 1500);
+    }
+  };
+
+  window.deleteMarkerFromList = function(index) {
+    if (confirm("آیا مایل به حذف این یادداشت هستید؟")) {
+      const markers = document.querySelectorAll(".note-marker");
+      if (markers[index]) {
+        markers[index].remove();
+        savePageState();
+        viewAllNotes(); 
+      }
+    }
+  };
+
+  function exportModifiedHTML() {
+    const docClone = document.cloneNode(true);
+    const currentMainHTML = document.querySelector('.main').innerHTML;
+    docClone.querySelector('.main').innerHTML = currentMainHTML;
+    
+    const htmlString = '<!DOCTYPE html>\n' + docClone.documentElement.outerHTML;
+    
+    const blob = new Blob([htmlString], { type: "text/html;charset=utf-8" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "infectious_arthritis_soleimani_synced.html";
+    link.click();
+  }
+
+  function closeAllNotesModal() {
+    document.getElementById("all-notes-modal").style.display = "none";
+  }
+
+  function escapeHTML(str) {
+    return str.replace(/[&<>'"]/g, 
+      tag => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        "'": '&#39;',
+        '"': '&quot;'
+      }[tag] || tag)
+    );
+  }
+</script>
+
+</body>
+</html>
